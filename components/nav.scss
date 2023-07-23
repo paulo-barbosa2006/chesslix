@@ -1,0 +1,88 @@
+@import "./sass/colors.scss";
+
+/* Top nav */
+#nav_container{
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px;
+    font-size: 1.2em;
+    align-items: center;
+}
+
+#nav_logo{
+    font-family:'Staatliches', cursive;
+    font-size: 1.6em;
+    letter-spacing: 16px;
+
+    span{
+        color: #f200ff;
+    }
+}
+
+#nav_menu_container{
+    .nav_menu{
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    }
+
+    .nav_link{
+        color: white;
+        text-decoration: none;
+    }
+
+    .hamburguer{
+        display: none;
+        cursor: pointer;
+
+        .bar{
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px 0;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            background-color:#fefefe;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 768px){
+    #nav_menu_container{
+        .nav_menu{
+            position: fixed;
+            left: -100%;
+            top: 70px;
+            margin-top: 30px;
+            gap: 0;
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+            .nav_item{
+                margin: 16px 0;
+            }
+        }
+
+        .nav_menu.active{
+            left: 0;
+        }
+
+        .hamburguer{
+            display: block !important;
+        }
+        .hamburguer.active{
+            .bar:nth-child(2){
+                opacity: 0;
+            }
+            .bar:nth-child(1){
+                transform: translateY(8px)rotate(45deg);
+            }
+            .bar:nth-child(3){
+                transform: translateY(-8px)rotate(-45deg);
+            }
+        }
+    }
