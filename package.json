@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build-css": "sass src/style.scss dist/styles/style.css --style=compressed" 
   },
   "author": "Paulo Barbosa",
   "license": "ISC",

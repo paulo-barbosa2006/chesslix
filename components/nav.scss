@@ -15,7 +15,7 @@
     letter-spacing: 16px;
 
     span{
-        color: #f200ff;
+        color: $primary-color;
     }
 }
 
@@ -29,6 +29,11 @@
     .nav_link{
         color: white;
         text-decoration: none;
+
+        &:hover{
+                color: #ffacec;
+                transition: 0.2s;
+            }
     }
 
     .hamburguer{
@@ -60,6 +65,10 @@
             width: 100%;
             text-align: center;
             transition: 0.3s;
+
+            .active{
+                left: 0;
+            }
         }
 
             .nav_item{
@@ -67,9 +76,7 @@
             }
         }
 
-        .nav_menu.active{
-            left: 0;
-        }
+        
 
         .hamburguer{
             display: block !important;
