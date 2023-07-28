@@ -1,10 +1,11 @@
 $background-color: linear-gradient(
     115deg,
-    hsl(311, 58%, 24%) 0%,
+    rgb(97, 26, 84) 0%,
     hsl(309, 60%, 24%) 12%,
     hsl(307, 61%, 24%) 25%,
     hsl(305, 62%, 25%) 36%,
     hsl(303, 63%, 25%) 47%,
     hsl(300, 64%, 25%) 57%);
 
-    $primary-color:#f200ff
+    $primary-color:#f200ff;
+    $secondary-color: #ffacec;
