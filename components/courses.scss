@@ -1,0 +1,100 @@
+@import "./sass/colors.scss";
+
+/* Courses section */
+
+.courseSection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+
+    h1{
+        font-size: 2.8em;
+        text-align: center;
+    }
+
+    .sublimeText{
+        width: 80vw;
+        height: 2px;
+        background: $divisorGradient;
+        margin: 20px 0;
+    }
+
+    .coursesContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 30px 0;
+        gap: 100px;
+        width: 1000px;
+        
+        .courseBox{
+            background-color:#7f078371;
+            ;
+            border-radius: 10px;
+            padding: 50px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            img{
+                width: 200px;
+                height: 200px;
+            }
+            p{
+                font-size: 1.1em;
+            }
+            button{
+                display: block;
+                background-color: #f85bc9;
+                outline: 3px #f85bc9 solid;
+                outline-offset: -3px;
+                border-radius: 5px;
+                border: none;
+                padding: 10px 15px;
+                -webkit-box-shadow: $importantGlow;
+                box-shadow: $importantGlow;
+                cursor: pointer;
+                transition: 400ms;
+                &:hover{
+                    background-color: transparent;
+                    color: #fefefe;
+                    transition: 400ms;
+                }
+                    
+                .button_text{
+                    font-weight: 700;
+                    font-size: 1.1em;
+                    transition: 0.1ms;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .coursesContainer {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .courseBox {
+            width: 90%;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .coursesContainer {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}

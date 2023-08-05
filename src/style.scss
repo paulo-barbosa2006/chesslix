@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import "../components/nav.scss";
-@import "../components/header.scss";
+@import "../components/header.scss";@import "../components/courses.scss";
 @import "../components/sass/colors.scss";
 
 /* General */
+
+html{
+  scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -16,6 +20,8 @@
     color: #fafafa;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
   }
 
 /* Container */

@@ -7,5 +7,9 @@ $background-color: linear-gradient(
     hsl(303, 63%, 25%) 47%,
     hsl(300, 64%, 25%) 57%);
 
+    $divisorGradient: linear-gradient(159deg, hsl(300, 64%, 25%) 0%, rgba(218,70,252,1) 52%, #691769 100%);
+
+    $importantGlow: 1px 1px 21px 1px rgba(254,38,255,0.48); 
+
     $primary-color:#f200ff;
     $secondary-color: #ffacec;
