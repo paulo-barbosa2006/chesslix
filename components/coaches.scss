@@ -1,0 +1,18 @@
+@import "./sass/colors.scss";
+
+/* Coaches section */
+
+.coachSection{
+    padding: 40px 20px 20px 20px;
+    width: 100%;
+
+    .containerBox{
+        width: 1400px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .coachBox{
+            background-image: url("../assets/images/chessPiece.png") ;
+            height: 400px;
+        }
+    }
+}

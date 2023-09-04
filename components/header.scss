@@ -18,13 +18,24 @@
             gap: 30px;
             max-width: 400px;
             h1{
+                font-size: 3em;
                 span{
                 color:$primary-color;
                 }
             }
             p{
                 line-height: 1.4em;
-                font-size: 1.3em;
+                font-weight: bold;
+                font-size: 1.5em;
+                color: white;
+           }
+
+           a{
+            text-decoration: none;
+           }
+
+           .button_text{
+            color: black;
            }
            button{
             display: block;

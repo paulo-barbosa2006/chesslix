@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import "../components/nav.scss";
 @import "../components/header.scss";@import "../components/courses.scss";
+@import "../components/coaches.scss";
 @import "../components/sass/colors.scss";
 
 /* General */
@@ -27,4 +28,34 @@ html{
 /* Container */
 .container{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* title */
+.title{
+  font-size: 2.8em;
+}
+
+/* sublime text */
+
+.sublimeText{
+  width: 80vw;
+  height: 2px;
+  background: $divisorGradient;
+  margin: 20px 0;
+}
+
+/* box */
+.box{
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
